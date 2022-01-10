@@ -38,3 +38,7 @@ $.ajax({
 		}
 	}
 });
+
+$('#editRoute select').on('change', function () {
+	showModal('#editRoute');
+});
