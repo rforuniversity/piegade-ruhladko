@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+	<section id="modal" class="shadow">
+		<div id="addRoute" class="box">
+			<input type="date" name="date">
+			<div class="btn" onclick="addRoute()">Add</div>
+		</div>
+		<div id="editRoute" class="box">
+			<select name="editRoutes"></select>
+			<input type="date" name="editDate">
+			<div class="btn" onclick="editRoute()">Edit</div>
+		</div>
+		<div id="deleteRoute" class="box">
+			<select name="routes"></select>
+			<div class="btn" onclick="deleteRoute()">Delete</div>
+		</div>
+	</section>
+
+	<header>
+		<div class="links">
+			<a href="routes.html">Routes</a>
+		</div>
+		<div class="action">
+			<a href="index.html">Logout</a>
+		</div>
+	</header>
+
+	<section id="routes">
+		<h1>Routes</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Date</th>
+					<th>Klients</th>
+					<th>Map</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<div class="actions">
+			<div class="btn" onclick="showModal('#addRoute')">Add</div>
+			<div class="btn" onclick="showModal('#editRoute')">Edit</div>
+			<div class="btn" onclick="showModal('#deleteRoute')">Delete</div>
+		</div>
+	</section>
+
+
+	<script src="./js/functions.js"></script>
+	<script src="./js/routes.js"></script>
+
+</body>
+
+</html>
